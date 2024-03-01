@@ -1,0 +1,158 @@
+<header class="header-style-3 wf100">
+  <div class="topbar">
+     <div class="container">
+        <div class="row">
+           <div class="col-md-6">
+              <p><i class="fas fa-map-marker-alt"></i> 4700 Millenia Blvd #175, Orlando, FL 32839, USA.</p>
+           </div>
+           <div class="col-md-6">
+              <ul class="topbar-social">
+                 <li> <a class="acclink" href="#"><i class="far fa-user-circle"></i> My Account</a> </li>
+              </ul>
+           </div>
+        </div>
+     </div>
+  </div>
+  <div class="h3-logo-row">
+     <div class="container">
+        <div class="row">
+           <div class="col-md-3 col-sm-4">
+              <div class="logo"><a href="index-2.html"><img src="images/h3logo.png" alt=""></a></div>
+           </div>
+
+
+        </div>
+     </div>
+  </div>
+  <div class="navrow">
+     <div class="container">
+        <div class="row">
+           <div class="col-md-12">
+              <nav class="navbar navbar-expand-lg">
+                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"> <i class="fas fa-bars"></i> </button>
+                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto">
+                       <li class="nav-item dropdown">
+                          <a class="nav-link dropdown-toggle" href="index-2.html"  role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Home </a>
+                          <ul class="dropdown-menu" >
+                             <li><a href="index-2.html">Home One</a></li>
+                             <li><a href="home-two.html">Home Two</a></li>
+                             <li><a href="home-three.html">Home Three</a></li>
+                          </ul>
+                       </li>
+                       <li class="nav-item"> <a class="nav-link" href="about.html">About</a> </li>
+                       <li class="nav-item dropdown">
+                          <a class="nav-link dropdown-toggle" href="events-grid.html"  role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Events </a>
+                          <ul class="dropdown-menu" >
+                             <li><a href="events-grid.html">Events Grid</a></li>
+                             <li><a href="events-grid-2.html">Events Grid Two</a></li>
+                             <li><a href="events-grid-3.html">Events Grid Three</a></li>
+                             <li><a href="events-list.html">Events List</a></li>
+                             <li><a href="events-list-two.html">Events List Two</a></li>
+                             <li><a href="event-details.html">Event Details</a></li>
+                          </ul>
+                       </li>
+                       <li class="nav-item dropdown">
+                          <a class="nav-link dropdown-toggle" href="causes.html"  role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Causes </a>
+                          <ul class="dropdown-menu" >
+                             <li><a href="causes.html">Causes Grid</a></li>
+                             <li><a href="causes-list.html">Causes List</a></li>
+                             <li><a href="causes-details.html">Causes Details</a> </li>
+                          </ul>
+                       </li>
+                       <li class="nav-item dropdown">
+                          <a class="nav-link dropdown-toggle" href="blog.html"  role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Blogs </a>
+                          <ul class="dropdown-menu" >
+                             <li><a href="blog.html">Blog Default</a></li>
+                             <li><a href="blog-list.html">Blog List</a> </li>
+                             <li><a href="blog-grid.html">Blog Grid</a></li>
+                             <li><a href="blog-two-col.html">Blog Two Columns</a> </li>
+                             <li><a href="blog-three-col.html">Blog Three Columns</a></li>
+                             <li><a href="blog-details.html">Blog Details</a></li>
+                          </ul>
+                       </li>
+                       <li class="nav-item dropdown">
+                          <a class="nav-link dropdown-toggle" href="#"  role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Pages </a>
+                          <ul class="dropdown-menu" >
+                             <li>
+                                <a href="#">Projects</a>
+
+                             </li>
+                             <li>
+                                <a href="#">Shop</a>
+                                <ul class="dropdown-menu" >
+                                   <li><a href="shop.html">Shop</a> </li>
+
+                                </ul>
+                             </li>
+                             <li>
+                                <a href="team.html">Team</a>
+
+                             </li>
+                             <li>
+                                <a href="#">Gallery</a>
+
+                             </li>
+
+                          </ul>
+                       </li>
+                       <li class="nav-item dropdown">
+                          <a class="nav-link dropdown-toggle" href="contact.html"  role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Contact </a>
+
+                       </li>
+                    </ul>
+                 </div>
+              </nav>
+           </div>
+        </div>
+     </div>
+  </div>
+</header>
+<section class="wf100 p100 inner-header">
+  <div class="container">
+     <h1>Vender des produits</h1>
+
+  </div>
+
+</section>
+<section class="contact-page wf100 p80">
+  <div class="container">
+     <div class="row">
+        <div class="col-md-1"></div>
+        <div class="col-md-10">
+           <div class="contact-form mb60">
+              <h3>Remplire Formulaire</h3>
+              <form [formGroup]="formData" (ngSubmit)="onSubmit()">
+                <ul class="cform">
+                  <li class="half pr-15">
+                    <input type="text" class="form-control" placeholder="nom de produit" formControlName="name">
+                  </li>
+                  <li class="half pl-15">
+                    <input type="text" class="form-control" placeholder="qnty_prod" formControlName="qnty_prod">
+                  </li>
+                  <li class="half pr-15">
+                    <input type="number" class="form-control" placeholder="prix" formControlName="prix">
+                  </li>
+                  <li class="half pl-15">
+                    <input type="text" class="form-control" placeholder="categories" formControlName="categ">
+                  </li>
+                  <li class="half pl-10">
+                    <input type="date" class="form-control" placeholder="date" formControlName="date">
+                  </li>
+
+                  <li class="half pl-15">
+                    <input type="file" class="form-control" placeholder="product_image" formControlName="product_image">
+                  </li>
+
+
+                  <li class="full">
+                    <input type="submit" value="Ajouter" class="fsubmit">
+                  </li>
+                </ul>
+              </form>
+
+           </div>
+        </div>
+     </div>
+  </div>
+</section>

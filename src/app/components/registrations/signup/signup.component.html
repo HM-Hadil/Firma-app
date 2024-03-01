@@ -1,0 +1,120 @@
+<app-header></app-header>
+
+<section class="promises wf100 p80">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-7">
+        <div class="pro-title">
+          <h2>Choisir votre localisation</h2>
+          <div>
+            <div class="google-map">
+              <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBIpqtImoYBvbPnzncI_7CJj9_MUFPItAU&callback=initMap" defer async></script>
+
+              <iframe #mapIframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11418.310112375979!2d-74.00986187433132!3d40.710981182716246!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew+York%2C+NY!5e0!3m2!1sen!2s!4v1540972202179"
+            ></iframe>
+
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-5">
+        <div class="volunteer-form">
+          <div class="section-title">
+            <strong>Rejoignez nous maintenant</strong>
+            <h2>Devenez un vendeur</h2>
+          </div>
+          <form [formGroup]="formData" (ngSubmit)="onSubmit()">
+            <ul>
+              <li>
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="Votre Nom"
+                  aria-label="Votre Nom"
+                  formControlName="name"
+                />
+              </li>
+              <li>
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="Votre Prénom"
+                  formControlName="prenom"
+                  aria-label="Votre Nom"
+                />
+              </li>
+              <li>
+                <input
+                  type="date"
+                  class="form-control"
+                  placeholder="date_nais"
+                  aria-label="Votre date_nais"
+                  formControlName="date_nais"
+                />
+              </li>
+
+              <li>
+                <input
+                  type="number"
+                  class="form-control"
+                  placeholder="Numéro"
+                  aria-label="Votre numero"
+                  formControlName="numero"
+                />
+              </li>
+              <li>
+                <input
+                  type="number"
+                  class="form-control"
+                  placeholder="Votre CIN"
+                  aria-label="Votre Nom"
+                  formControlName="cin"
+                />
+              </li>
+              <li>
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder=" Adresse Email "
+                  aria-label="Email Address"
+                  formControlName="email"
+                />
+              </li>
+              <div formGroupName="user">
+                <li style="display: none">
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="username"
+                    formControlName="username"
+                    aria-label="Votre Nom"
+                  />
+                </li>
+                <li>
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="Votre mot de passe"
+                    formControlName="password"
+                    aria-label="Votre Nom"
+                  />
+                </li>
+              </div>
+
+              <li class="mt-4">
+                <input
+                  type="submit"
+                  class="fsubmit"
+                  value="Rejoignez nous"
+                  [disabled]="!formData.valid"
+                />
+              </li>
+            </ul>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<app-footer></app-footer>

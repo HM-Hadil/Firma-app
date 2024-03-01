@@ -1,0 +1,60 @@
+<app-header></app-header>
+<section class="wf100 p100 inner-header">
+  <div class="container">
+    <h1>Shop</h1>
+    <h6 style="color: white">
+      Plongez dans un paradis de produits bio avec notre boutique en ligne
+      dédiée à l'alimentation saine et respectueuse de l'environnement. Explorez
+      notre vaste sélection de produits 100% bio.
+    </h6>
+  </div>
+</section>
+
+<section class="shop wf100 p80">
+  <div class="container">
+    <div class="row">
+      <!--Pro Box Start-->
+      <div class="col-lg-3 col-sm-6" *ngFor="let shop of shop">
+        <div class="product-box">
+          <div class="pro-thumb">
+            <a href="#" (click)="AddPanier(shop.id)">Add To Cart</a>
+            <img [src]="shop.product_image" alt="" />
+          </div>
+          <div class="pro-txt">
+            <h5><span style="color: #48BEF9;">catégorie : </span>{{ shop.categ }}</h5>
+
+            <h5> <span style="color: #48BEF9;">nom :</span> {{ shop.design }}</h5>
+            <h4 class="pro-price"><span style="color: #48BEF9;">prix: </span>{{ shop.prix }}$</h4>
+            <h4 class="pro-price"><span style="color: #48BEF9;">quantité:</span> {{ shop.qntprod }}</h4>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12">
+        <div class="gt-pagination">
+          <nav>
+            <ul class="pagination">
+              <li class="page-item">
+                <a class="page-link" href="#" aria-label="Previous">
+                  <i class="fas fa-angle-left"></i>
+                </a>
+              </li>
+              <li class="page-item"><a class="page-link" href="#">1</a></li>
+              <li class="page-item active">
+                <a class="page-link" href="#">2</a>
+              </li>
+              <li class="page-item"><a class="page-link" href="#">3</a></li>
+              <li class="page-item">
+                <a class="page-link" href="#" aria-label="Next">
+                  <i class="fas fa-angle-right"></i>
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<app-footer></app-footer>

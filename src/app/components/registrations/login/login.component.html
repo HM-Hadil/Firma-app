@@ -1,0 +1,55 @@
+<app-header></app-header>
+<section class="promises wf100 p80">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-7">
+        <div class="pro-title">
+          <h2>Promesses actuelles</h2>
+          <h3>
+            Économiser l'eau, l'énergie, contrôler la pollution et
+            l'environnement, la faune, la plantation forestière
+          </h3>
+        </div>
+
+      </div>
+      <div class="col-md-5">
+        <div class="volunteer-form">
+          <div class="section-title">
+            <strong>REJOIGNEZ NOUS MAINTENANT
+            </strong>
+            <h2>Connexion</h2>
+          </div>
+          <form [formGroup]="loginForm" (ngSubmit)="login()">
+            <ul>
+              <li>
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="username"
+                  aria-label="Username"
+                  formControlName="username"
+                  name="username"
+                />
+              </li>
+              <li>
+                <input
+                  type="password"
+                  class="form-control"
+                  placeholder="Mot de passe"
+                  aria-label="Password"
+                  formControlName="password"
+                  name="password"
+                />
+              </li>
+              <li>
+                <input type="submit" class="fsubmit" value="Connexion" />
+              </li>
+            </ul>
+          </form>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<app-footer></app-footer>

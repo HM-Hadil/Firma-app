@@ -1,0 +1,32 @@
+<app-header></app-header>
+<form [formGroup]="formData" class="p100">
+  <ul class="cform">
+    <li class="half pr-15">
+      <input type="text" class="form-control" placeholder="nom de produit" formControlName="name">
+    </li>
+    <li class="half pl-15">
+      <input type="text" class="form-control" placeholder="qnty_prod" formControlName="qntprod">
+    </li>
+    <li class="half pr-15">
+      <input type="text" class="form-control" placeholder="design" formControlName="design">
+    </li>
+    <li class="half pl-15">
+      <input type="number" class="form-control" placeholder="prix" formControlName="prix">
+    </li>
+    <li class="half pr-15">
+      <input type="text" class="form-control" placeholder="categories" formControlName="categ">
+    </li>
+    <li class="half pl-15">
+      <input type="date" class="form-control" placeholder="date" formControlName="date">
+    </li>
+    <li class="half pr-15">
+      <input type="file" class="form-control" placeholder="product_image" formControlName="product_image">
+    </li>
+
+    <li class="full">
+      <input type="submit"  value="Ajouter" class="fsubmit">
+    </li>
+  </ul>
+</form>
+
+<app-footer></app-footer>
